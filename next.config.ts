@@ -23,6 +23,10 @@ const nextConfig: NextConfig = {
         source: '/ekstra-services-og-tryghedspakker',
         destination: '/extra-services'
       },
+      {
+        source: '/kontakt',
+        destination: '/contact'
+      },
     ];
   },
 };

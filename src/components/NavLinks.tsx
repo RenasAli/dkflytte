@@ -25,7 +25,7 @@ const NavLinks = ({onClose}: NavLinksProps) => {
       <NavButton onClose={onClose} href="/about" isActive={isActive("/about")} title="OM DK-FLYTTE"/>
       <NavButton onClose={onClose} href="/pricing" isActive={isActive("/pricing")} title="PRICING"/>
 
-      <NavButton onClose={onClose} href="/contact" isActive={isActive("/contact")} title="KONTAKT"/>
+      <NavButton onClose={onClose} href="/kontakt" isActive={isActive("/kontakt")} title="KONTAKT"/>
     </>
   )
 }
