@@ -1,3 +1,4 @@
+"use client";
 import { movingPackages } from "@/data/movingPackages";
 import {
   Box,
