@@ -32,7 +32,7 @@ const BusinessMoving = () => {
                         Erhvervsflytning
                     </Heading>
                     <Text my={5}>
-                        Når det gælder erhvervsflytning, forstår vi hos Hammerflyt, hvor vigtigt det er at sikre en gnidningsfri og effektiv proces, så din virksomhed oplever minimal nedetid. Vores erfarne folk har ekspertisen til at håndtere komplekse firmaflytninger, uanset om det drejer sig om kontorer, butikker eller lagerfaciliteter. Vi arbejder sammen med dig for at planlægge og udføre flytningen på en måde, der passer til din tidsplan.
+                        Når det gælder erhvervsflytning, forstår vi hos DK Flytte, hvor vigtigt det er at sikre en gnidningsfri og effektiv proces, så din virksomhed oplever minimal nedetid. Vores erfarne folk har ekspertisen til at håndtere komplekse firmaflytninger, uanset om det drejer sig om kontorer, butikker eller lagerfaciliteter. Vi arbejder sammen med dig for at planlægge og udføre flytningen på en måde, der passer til din tidsplan.
                     </Text>
                     <Text mb={5}>
                         Med vores professionelle flyttemænd og moderne udstyr sørger vi for, at dine kontormøbler, IT-udstyr og dokumenter transporteres sikkert til din nye placering. Vi har blandt andet hjulpet med flytning for erhverv rundt på Sjælland, eksempelvis i København og Nordsjælland, men vi hjælper gerne med netop din firmaflytning, uanset hvor i Danmark du skal flytte til og fra – også hvis det er i udlandet.
@@ -61,7 +61,7 @@ const BusinessMoving = () => {
                         Skræddersyet firmaflytning til din virksomheds behov
                     </Heading>
                     <Text my={5} color={"white"}>
-                        Hos Hammerflyt forstår vi, at hver virksomhed er unik. Derfor tilbyder vi skræddersyede løsninger til erhvervsflytning, der er tilpasset din virksomheds specifikke behov. Vores flyttefolk arbejder tæt sammen med dig for at udarbejde en detaljeret plan, så overgangen til det nye kontor bliver så glat som muligt.
+                        Hos DK Flytte forstår vi, at hver virksomhed er unik. Derfor tilbyder vi skræddersyede løsninger til erhvervsflytning, der er tilpasset din virksomheds specifikke behov. Vores flyttefolk arbejder tæt sammen med dig for at udarbejde en detaljeret plan, så overgangen til det nye kontor bliver så glat som muligt.
                     </Text>
                     <Text mb={5} color={"white"}>
                         Vi tager os af alle trin i processen med flytning for firmaer, herunder pakning, transport og udpakning på det nye sted, så du og dit personale hurtigt kan komme tilbage til jeres daglige arbejde. Vi kan desuden også være behjælpelige med flytterengøring, hvis du ifølge lejekontrakten skal efterlade de gamle lokaler i rengjort tilstand.
@@ -156,7 +156,7 @@ const BusinessMoving = () => {
                         Kontakt os for et uforpligtende tilbud på erhvervsflytning
                     </Heading>
                     <Text my={10}>
-                        Planlægger du en erhvervsflytning, eksempelvis en butiks- eller kontorflytning? Lad Hammerflyt være din partner og sikre en problemfri firmaflytning. Kontakt os i dag for et uforpligtende tilbud.
+                        Planlægger du en erhvervsflytning, eksempelvis en butiks- eller kontorflytning? Lad DK Flytte være din partner og sikre en problemfri firmaflytning. Kontakt os i dag for et uforpligtende tilbud.
                     </Text>
                     <Text mb={10}>
                         Vi er dedikerede til at hjælpe virksomheder med at flytte hurtigt og effektivt, og vi står klar til at hjælpe dig med alle aspekter af processen. Uanset hvor du skal flytte hen, og hvor meget der skal flyttes, sørger vi for en sikker og effektiv flytning.

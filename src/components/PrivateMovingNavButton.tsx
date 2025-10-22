@@ -1,5 +1,5 @@
 "use client";
-import { Accordion, AccordionItem, AccordionButton, Flex, Button, AccordionIcon, AccordionPanel, VStack, Menu, MenuButton, MenuList, HStack, MenuGroup, MenuDivider, MenuItem, useDisclosure, Link } from "@chakra-ui/react";
+import { Accordion, AccordionItem, AccordionButton, Flex, Button, AccordionIcon, AccordionPanel, VStack, Menu, MenuButton, MenuList, MenuItem, useDisclosure, Link } from "@chakra-ui/react";
 import { FaAngleDown } from "react-icons/fa6";
 import NavButton from "./NavButton";
 import { useRef } from "react";
@@ -40,175 +40,117 @@ const PrivateMovingNavButton = ({isActive, onClose}:PrivateMovingNavButtonProps)
   return (
     <>
     <Accordion allowToggle display={{ md: 'flex', lg: 'none' }} w={"100%"}>
-        <AccordionItem border={0} p={0}>
-          <AccordionButton as={Flex} align="center" justifyContent="space-between" _hover={{bg: "none"}} >
-            <Button
-              pl={0}
-              as={Link}
-              href={"/privatflytning"}
-              variant="ghost"
-              _hover={{bg: "none", color: "secondary"}}
-              fontWeight="bold"
-              fontSize="md"
-              color={isActive ? "accent" : "primary.500"}
-              onClick={onClose}
-            >
-              PRIVATFLYTNING
-            </Button>
-            <AccordionIcon />
-          </AccordionButton>
-          <AccordionPanel pb={4}>
-            <VStack align='stretch' >
-              {navMenuItem.map((item)=> (
-                <Link
-                  key={item.id}
-                  color={"primary.500"}
-                  ml={5}
-                  mb={1}
-                  fontWeight="semibold"
-                  onClick={()=>{scrollTo( item.path, String(item.id))}}
-                >
-                  {item.title}
-                </Link>
-              ))}
-            </VStack>
-          </AccordionPanel>
-        </AccordionItem>
+      <AccordionItem border={0} p={0}>
+        <AccordionButton as={Flex} align="center" justifyContent="space-between" _hover={{bg: "none"}} >
+          <Button
+            pl={0}
+            as={Link}
+            href={"/privatflytning"}
+            variant="ghost"
+            _hover={{bg: "none", color: "secondary"}}
+            fontWeight="bold"
+            fontSize="md"
+            color={isActive ? "accent" : "primary.500"}
+            onClick={onClose}
+          >
+            PRIVATFLYTNING
+          </Button>
+          <AccordionIcon />
+        </AccordionButton>
+        <AccordionPanel pb={4}>
+          <VStack align='stretch' >
+            {navMenuItem.map((item)=> (
+              <Link
+                key={item.id}
+                color={"primary.500"}
+                ml={5}
+                mb={1}
+                fontWeight="semibold"
+                onClick={()=>{scrollTo( item.path, String(item.id))}}
+              >
+                {item.title}
+              </Link>
+            ))}
+          </VStack>
+        </AccordionPanel>
+      </AccordionItem>
     </Accordion>
     <Menu isOpen={privateMovingMenuIsOpen}>
-        <MenuButton
-            onClick={handleMenuBtnClick}
-            _focusVisible={{ boxShadow: 'none' }}
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            display={{ base: 'none', md: 'none', lg: 'flex' }}
+      <MenuButton
+          onClick={handleMenuBtnClick}
+          _focusVisible={{ boxShadow: 'none' }}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          display={{ base: 'none', md: 'none', lg: 'flex' }}
+      >
+        <Flex align="center">
+            <NavButton href="/privatflytning" isActive={isActive} title="PRIVATFLYTNING"/>
+            <FaAngleDown fontSize={15} color="#0E79AD"/>
+        </Flex>
+      </MenuButton>
+        <MenuList
+          bg={"rgba(255,255,255, 0.9)"}
+          borderRadius='0px'
+          mt={5}
+          w={"300px"}
+          position="absolute"
+          zIndex="dropdown"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         >
-            <Flex align="center">
-                <NavButton href="/privatflytning" isActive={isActive} title="PRIVATFLYTNING"/>
-                <FaAngleDown fontSize={15} color="#0E79AD"/>
-            </Flex>
-          </MenuButton>
-          <MenuList
-            bg={"rgba(255,255,255, 1)"}
-            borderRadius='0px'
-            mt={5}
-            w={"900px"}
-            position="absolute"
-            zIndex="dropdown"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <HStack>
-            <MenuGroup title='Flytteservice'>
-              <MenuDivider />
-              {navMenuItem.map((item)=> {
-                if(item.path !== "/flytteservice") return;
-                return(
-                  <MenuItem
-                    key={item.id}
-                    bg={"none"}
-                    mb={1}
-                    ml={5}
-                    fontWeight="semibold"
-                    color={"primary.500"}
-                    _hover={{color: 'secondary'}} 
-                    onClick={()=>{scrollTo(item.path ,String(item.id)); handleMouseLeave()}}
-                  >
-                      {item.title}
-                  </MenuItem>
-              )})}
-            </MenuGroup>
-            <MenuGroup title='Landsdækkende og internationale flytninger'>
-              <MenuDivider />
-              {navMenuItem.map((item)=> {
-                if(item.path !== "/landsdaekkende-og-internationale-flytninger") return;
-                return(
-                  <MenuItem
-                    key={item.id}
-                    bg={"none"}
-                    mb={1}
-                    ml={5}
-                    fontWeight="semibold"
-                    color={"primary.500"}
-                    _hover={{color: 'secondary'}} 
-                    onClick={()=>{scrollTo(item.path ,String(item.id)); handleMouseLeave()}}
-                  >
-                      {item.title}
-                  </MenuItem>
-              )})}
-            </MenuGroup>
-            <MenuGroup title='Ekstra services & Tryghedspakker'>
-              <MenuDivider />
-              {navMenuItem.map((item)=> {
-                if(item.path !== "/extra-services") return;
-                return(
-                  <MenuItem
-                    key={item.id}
-                    bg={"none"}
-                    mb={1}
-                    ml={5}
-                    fontWeight="semibold"
-                    color={"primary.500"}
-                    _hover={{color: 'secondary'}} 
-                    onClick={()=>{scrollTo(item.path ,String(item.id)); handleMouseLeave()}}
-                  >
-                      {item.title}
-                  </MenuItem>
-              )})}
-            </MenuGroup>
-            </HStack>
-          </MenuList>
+          {navMenuItem.map((item)=> {
+            if(item.path !== "/privatflytning") return;
+            return(
+              <MenuItem
+                key={item.id}
+                bg={"none"}
+                mb={1}
+                ml={5}
+                fontWeight="semibold"
+                color={"primary.500"}
+                _hover={{color: 'secondary'}} 
+                onClick={()=>{scrollTo(item.path ,String(item.id)); handleMouseLeave()}}
+              >
+                {item.title}
+              </MenuItem>
+          )})}
+        </MenuList>
     </Menu>
     </>
-
   )
 }
 
 export default PrivateMovingNavButton
+
 const privateMovinOffers = [
-    {
-        id: 1,
-        title: "Flyttehjælp",
-        path: '/flytteservice',
-    },
-    {
-        id:2 ,
-        title: "Dør til dør flytning",
-        path: '/flytteservice',
-    },
-    {
-        id: 3,
-        title: "Flytning af tunge genstande",
-        path: '/flytteservice',
-    },
-    {
-        id: 4,
-        title: "Flytning mellem Sjælland og Jylland",
-        path: '/landsdaekkende-og-internationale-flytninger',
-    },
-    {
-        id: 5,
-        title: "Udlandsflytning",
-        path: '/landsdaekkende-og-internationale-flytninger',
-    },
-    {
-        id: 6,
-        title:"Flytteopbevaring",
-        path: '/landsdaekkende-og-internationale-flytninger',
-    },
-    {
-        id: 7,
-        title: "Nedpakning",
-        path: '/extra-services',
-    },
-    {
-        id: 8,
-        title: "Udpakning",
-        path: '/extra-services',
-    },
-    {
-        id: 9,
-        title: "Møbelopbevaring",
-        path: '/extra-services',
-    },
+  {
+    id: 1,
+    title: "Flyttehjælp",
+    path: '/privatflytning',
+  },
+  {
+    id:2 ,
+    title: "Dør til dør flytning",
+    path: '/privatflytning',
+  },
+  {
+    id: 3,
+    title: "Flytning af tunge genstande",
+    path: '/privatflytning',
+  },
+  {
+    id: 4,
+    title: "Nedpakning",
+    path: '/privatflytning',
+  },
+  {
+    id: 6,
+    title: "Udpakning",
+    path: '/privatflytning',
+  },
+  {
+    id: 5,
+    title: "Møbelopbevaring",
+    path: '/privatflytning',
+  },
 ];

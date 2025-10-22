@@ -32,7 +32,7 @@ const MovingService = () => {
                         Flyttehjælp
                     </Heading>
                     <Text my={5}>
-                        At flytte kan være en stressende proces, men hos Hammerflyt er vi her for at hjælpe dig hele vejen. Vi tilbyder omfattende flyttehjælp, hvor vores erfarne ansatte sørger for, at din flytning bliver nem og tryg. Vi håndterer alle typer flytninger – fra små lejligheder til store virksomheder – og vi kan hjælpe med alt fra nedpakning til transport og udpakning.
+                        At flytte kan være en stressende proces, men hos DK Flytte er vi her for at hjælpe dig hele vejen. Vi tilbyder omfattende flyttehjælp, hvor vores erfarne ansatte sørger for, at din flytning bliver nem og tryg. Vi håndterer alle typer flytninger – fra små lejligheder til store virksomheder – og vi kan hjælpe med alt fra nedpakning til transport og udpakning.
                     </Text>
                     <Text mb={5}>
                         Uanset om du flytter inden for samme by eller til den anden ende af Danmark, eller endda udlandet, kan du stole på, at dine ejendele er i gode hænder hos os. Vi hjælper mange kunder med flytninger til og fra Sjælland, herunder Nordsjælland og København, men vi tager imod enhver opgave, uanset hvor du skal flytte til eller fra.
