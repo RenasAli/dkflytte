@@ -27,6 +27,14 @@ const nextConfig: NextConfig = {
         source: '/kontakt',
         destination: '/contact'
       },
+      {
+        source: '/priser',
+        destination: '/pricing'
+      },
+      {
+        source: '/om-os',
+        destination: '/about'
+      },
     ];
   },
 };

@@ -1,6 +1,5 @@
 "use client";
 import { Box, Heading, SimpleGrid, Image, Text, Link as ChakraLink } from "@chakra-ui/react";
-import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -36,8 +35,8 @@ export default function Footer() {
               </Text>
               <Text>
                 Telefon:{" "}
-                <ChakraLink href={`tel:$40404040`} _hover={{textDecoration: "underline"}} textColor="secondary.500">
-                  40404040
+                <ChakraLink href={`tel:+4552698285`} _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                  +45 52 69 82 85
                 </ChakraLink>
               </Text>
             </Box>
@@ -46,17 +45,17 @@ export default function Footer() {
             <Heading size="md" color="primary" fontWeight={"semibold"}>Læs mere</Heading>
             <Box px={3} mt={5} fontSize="sm">
               <Text>
-                <ChakraLink as={Link} href="/flytteservice" _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                <ChakraLink href="/flytteservice" _hover={{textDecoration: "underline"}} textColor="secondary.500">
                     Flytteservice
                 </ChakraLink>
               </Text>
               <Text>
-                <ChakraLink as={Link} href="/landsdaekkende-og-internationale-flytninger" _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                <ChakraLink href="/landsdaekkende-og-internationale-flytninger" _hover={{textDecoration: "underline"}} textColor="secondary.500">
                     Landsdækkende og internationale flytninger
                 </ChakraLink>
               </Text>
               <Text>
-                <ChakraLink as={Link} href="/extra-services" _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                <ChakraLink href="/extra-services" _hover={{textDecoration: "underline"}} textColor="secondary.500">
                     Ekstra services & Tryghedspakker
               </ChakraLink>
               </Text>

@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, SimpleGrid, Flex, Heading, Divider, Stack, Button, Image, Text } from "@chakra-ui/react";
+import { Box, SimpleGrid, Flex, Heading, Divider, Stack, Button, Image, Text, Link } from "@chakra-ui/react";
 
 interface PageHeroProps {
     imageSrc: string,
@@ -28,8 +28,8 @@ const PageHero = ({imageSrc, title, desc}: PageHeroProps) => {
                     <Text my={5} color="white">{desc ?? ""}</Text>
                     <Divider/>
                     <Stack direction={{ base: 'column', md: 'row' }}  mt={5} align="center" justify={"center"} spacing={10}>
-                        <Button size="lg" py={9} px={20} rounded="full" fontWeight="semibold" bgColor="white" color="primary.500" _hover={{bg: "whiteAlpha.500", color: "white"}}>Få et tilbud</Button>
-                        <Button size="lg" py={9} px={20} variant="outline" rounded="full" color="white" _hover={{ bg: "whiteAlpha.500"}}>Ring: 42 66 92 42</Button>
+                        <Button as={Link} href='/kontakt' size="lg" py={9} px={20} rounded="full" fontWeight="semibold" bgColor="white" color="primary.500" _hover={{bg: "whiteAlpha.500", color: "white"}}>Få et tilbud</Button>
+                        <Button as={Link} href={`tel:+4552698285`} size="lg" py={9} px={20} variant="outline" rounded="full" color="white" _hover={{ bg: "whiteAlpha.500"}}>Ring: +45 52 69 82 85</Button>
                     </Stack>
                 </Box>
             </Flex>

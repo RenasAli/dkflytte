@@ -15,16 +15,10 @@ const NavLinks = ({onClose}: NavLinksProps) => {
   return (
     <>
       <NavButton onClose={onClose} href="/" isActive={isActive("/")} title="FORSIDE"/>
-      
-      {/* <NavButton onClose={onClose} href="/privatflytning" isActive={isActive("/privatflytning")} title="PRIVATFLYTNING"/> */}
-
       <PrivateMovingNavButton isActive={isActive("/privatflytning")} onClose={onClose}/>
       <BussinessMovingNavButton isActive={isActive("/erhvervsflytning")} onClose={onClose}/>
-      {/* <NavButton onClose={onClose} href="/erhvervsflytning" isActive={isActive("/erhvervsflytning")} title="ERHVERVSFLYTNING"/> */}
-
-      <NavButton onClose={onClose} href="/about" isActive={isActive("/about")} title="OM DK-FLYTTE"/>
-      <NavButton onClose={onClose} href="/pricing" isActive={isActive("/pricing")} title="PRICING"/>
-
+      <NavButton onClose={onClose} href="/om-os" isActive={isActive("/om-os")} title="OM DK-FLYTTE"/>
+      <NavButton onClose={onClose} href="/priser" isActive={isActive("/priser")} title="PRISER"/>
       <NavButton onClose={onClose} href="/kontakt" isActive={isActive("/kontakt")} title="KONTAKT"/>
     </>
   )

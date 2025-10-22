@@ -1,12 +1,15 @@
 "use client";
 
-import { Box, Container, Flex, Heading, SimpleGrid, Text } from "@chakra-ui/react";
+import { Box, Card, CardBody, Container, Flex, Heading, IconButton, Link, SimpleGrid, Text } from "@chakra-ui/react";
 import MovingForm from "@/components/ContactForm";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+
 
 const Kontakt = () => {
   return (
     <Box>
-        <Flex h={"30vh"} bg={"primary.500"} borderBottomRadius="50%" alignItems={"center"} justifyContent={"center"}>
+        <Flex h={"20vh"} bg={"primary.500"} borderBottomRadius="50%" alignItems={"center"} justifyContent={"center"}>
             <Heading color={"white"} fontSize={"6xl"}> Kontakt os</Heading>
         </Flex>
         <Container maxW={"container.xl"} zIndex={1}  rounded={"2xl"} py={10} px={5}>
@@ -24,6 +27,56 @@ const Kontakt = () => {
                     <Text mb={5}>
                         📞 Ring til os eller 📧 send en besked allerede i dag – vi vender hurtigt tilbage med et skræddersyet tilbud til dine behov.
                     </Text>
+                    <SimpleGrid columns={2} spacing={6} p={{sm: 0, md: 5}}>
+                        <Card align='center' boxShadow=" 0 4px 14px  rgba(0, 144, 200, 0.3)" py={1}>
+                            <CardBody>
+                                <Flex alignItems={"center"} justifyContent={"center"}>
+                                <IconButton
+                                    as={Link}
+                                    href={`mailto:kundeservice@dkflytte.dk`}
+                                    variant='outline'
+                                    color='secondary'
+                                    borderWidth={0}
+                                    aria-label='mail Sage'
+                                    fontSize="5xl"
+                                    w={20}
+                                    h={20}
+                                    icon={<MdEmail />}
+                                    textAlign={"center"}
+                                /></Flex>
+                                <Heading size='lg' color="secondary" mb={3} textAlign={"center"}> Skriv til os </Heading>
+                                <Text fontSize={{base: "sm", md: "md"}} color="secondary">
+                                    <Link href={`mailto:kundeservice@dkflytte.dk`} _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                                        kundeservice@dkflytte.dk
+                                    </Link>
+                                </Text>
+                            </CardBody>
+                        </Card>
+                        <Card align='center' boxShadow=" 0 4px 14px  rgba(0, 144, 200, 0.3)" py={1}>
+                            <CardBody>
+                                <Flex alignItems={"center"} justifyContent={"center"}>
+                                <IconButton
+                                    as={Link}
+                                    href={`tel:+4552698285`}
+                                    variant='outline'
+                                    color='secondary'
+                                    borderWidth={0}
+                                    aria-label='Call Sage'
+                                    fontSize="5xl"
+                                    w={20}
+                                    h={20}
+                                    icon={<FaPhone />}
+                                    textAlign={"center"}
+                                /></Flex>
+                                <Heading size='lg' color="secondary" mb={3}> Ring til os </Heading>
+                                <Text fontSize={{base: "sm", md: "md"}} color="secondary">
+                                    <Link href={`tel:+4552698285`} _hover={{textDecoration: "underline"}} textColor="secondary.500">
+                                        +45 52 69 82 85
+                                    </Link>
+                                </Text>
+                            </CardBody>
+                        </Card>
+                    </SimpleGrid>
                 </Box>
                 <Box bgColor="blackAlpha.50" p={6} rounded="3xl" boxShadow={"2xl"}  borderColor="grey.50" borderWidth="1px">
                     <Heading color={"secondary"} mb={10}>

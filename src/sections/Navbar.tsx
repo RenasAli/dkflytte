@@ -6,8 +6,8 @@ import NavLinks from '@/components/NavLinks';
 export default function Navbar(){
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <Box bg="rgba(255,255,255, 0.9)" boxShadow="sm" px={6} position="fixed" zIndex={10} w="100%" h="100px">
-      <Flex maxW="7xl" mx="auto" align="center" justify="space-between" h="100px">
+    <Box bg="rgba(255,255,255, 0.9)" boxShadow="sm" px={5} position="fixed" zIndex={10} w="100%" h="100px">
+      <Flex maxW="8xl" mx="auto" align="center" justify="space-between" h="100px">
         <Box as={Link} href={"/"} cursor="pointer">
         <Image
           minW={"120px"}

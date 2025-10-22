@@ -1,7 +1,7 @@
 "use client";
 
 import PageHero from "@/components/PageHero";
-import { Box, Container, Heading, SimpleGrid, Text, Image, Button, Stack, Card, CardBody, CardHeader } from "@chakra-ui/react";
+import { Box, Container, Heading, SimpleGrid, Text, Image, Button, Stack, Card, CardBody, CardHeader, Link } from "@chakra-ui/react";
 import { useEffect } from "react";
 
 const BusinessMoving = () => {
@@ -162,8 +162,8 @@ const BusinessMoving = () => {
                         Vi er dedikerede til at hjælpe virksomheder med at flytte hurtigt og effektivt, og vi står klar til at hjælpe dig med alle aspekter af processen. Uanset hvor du skal flytte hen, og hvor meget der skal flyttes, sørger vi for en sikker og effektiv flytning.
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }}  mt={5} align="center" justify={"center"} spacing={10}>
-                        <Button size="lg" py={9} px={20} rounded="full" fontWeight="semibold" _hover={{bgColor: "whiteAlpha.500", color: "secondary", borderColor: "secondary"}}>Få et tilbud</Button>
-                        <Button size="lg" py={9} px={20} variant="outline" textColor="secondary" borderColor={"secondary"} rounded="full" _hover={{bgColor: "blackAlpha.50"}}>Ring: 42 66 92 42</Button>
+                        <Button as={Link} href='/kontakt' size="lg" py={9} px={20} rounded="full" fontWeight="semibold" _hover={{bgColor: "whiteAlpha.500", color: "secondary", borderColor: "secondary"}}>Få et tilbud</Button>
+                        <Button as={Link} href={`tel:+4552698285`} size="lg" py={9} px={20} variant="outline" textColor="secondary" borderColor={"secondary"} rounded="full" _hover={{bgColor: "blackAlpha.50"}}>Ring: +45 52 69 82 85</Button>
                     </Stack>
                 </Box>
                 <Box>

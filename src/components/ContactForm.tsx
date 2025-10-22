@@ -30,6 +30,21 @@ interface FormValues {
 export default function MovingForm() {
   const validateRequired = (value: string):string | undefined => (!value ? "Påkrævet felt" : undefined);
 
+  function onSubmit(values: FormValues){
+
+
+    fetch("https://formcarry.com/s/1VNCnen4RqO", {
+      method: 'POST',
+      headers: { 
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(values)
+    })
+    .then(response => response.json());
+  }
+
+
   return (
     <Box maxW="700px" mx="auto" mt={10}>
       <Formik <FormValues>
@@ -47,7 +62,7 @@ export default function MovingForm() {
         }}
         onSubmit={(values, actions) => {
           setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
+            onSubmit(values);
             actions.setSubmitting(false);
           }, 800);
         }}
@@ -155,15 +170,13 @@ export default function MovingForm() {
               </Field>
 
               {/* Besked */}
-              <Field name="message" validate={validateRequired}>
-                {({ field, form }:FieldProps) => (
-                  <FormControl isRequired isInvalid={!!(form.errors.message && form.touched.message)}>
+              <Field name="message">
+                {({ field }:FieldProps) => (
+                  <FormControl>
                     <Textarea {...field} rows={5} placeholder="Din besked" bgColor="whiteAlpha.500" />
-                    <FormErrorMessage>{form.errors.message as string}</FormErrorMessage>
                   </FormControl>
                 )}
               </Field>
-
               <Flex justify="flex-end">
                 <Button bg="secondary" color="white" isLoading={props.isSubmitting} type="submit">
                   Send besked
