@@ -11,30 +11,42 @@ const About = () => {
             <Box position="absolute" inset={0} bgGradient="linear(to-b, rgba(0,0,0,0.55), rgba(0,0,0,0.75))" />
             <Flex maxW="container.2xl" minH={{ base: '60vh', md: '85vh' }}  position="relative" zIndex="5"  align="center" justify="center">
             <Box>
-                <Heading fontSize={{ base: '2xl', md: '4xl', lg: "6xl" }} lineHeight="1.05" color="white" textAlign="center" my={10}>Om DK Flytte</Heading>
+                <Heading fontSize={{ base: '2xl', md: '4xl', lg: "6xl" }} lineHeight="1.05" color="white" textAlign="center" my={10}>
+                    Om DK Flytte
+                </Heading>
                 <Stack spacing={6} color="white" p={5} m={5} bg="blackAlpha.200">
-                <Text fontSize="lg" textAlign="center">Leder du efter et professionelt flyttefirma, der leverer pålidelig og punktlig flytteservice hver eneste gang?</Text>
-                <Text fontSize="lg">Hos os er tid, tryghed og kvalitet nøgleordene i alt, vi gør.<br/>Vi forstår, hvor vigtigt det er, at din flytning forløber effektivt, sikkert og uden stress – uanset om det drejer sig om privatflytning, erhvervsflytning eller akut flytning.</Text>
-                <Text fontSize="lg">Vores Fordele</Text>
-                <UnorderedList spacing={3} pl={5} styleType={`'- '`}>
-                    <ListItem>
-                        Punktlighed – 99 % af flytninger leveres til aftalt tid.
-                    </ListItem>
-                    <ListItem>
-                        Erfarent team – Vi håndterer dine ejendele sikkert og professionelt.
-                    </ListItem>
-                    <ListItem>
-                        Akut flytning 24/7 – Vi er klar, når du har brug for hurtig hjælp.
-                    </ListItem>
-                    <ListItem>
-                        Flyttegaranti – Tryg og forsvarlig transport af alle dine ting.
-                    </ListItem>
-                </UnorderedList>
-                <Text fontSize="lg">Vælg os for en stressfri og pålidelig flytning.</Text>
-                <Stack direction={{ base: 'column', md: 'row' }}  mt={5} align="center" justify={"center"} spacing={10}>
-                    <Button as={Link} href='/kontakt' size="lg" py={9} px={20} rounded="full" fontWeight="semibold" _hover={{bgColor: "whiteAlpha.500"}}>Få et tilbud</Button>
-                    <Button as={Link} href={`tel:+4552698285`} size="lg" py={9} px={20} variant="outline" textColor="white" rounded="full" _hover={{bgColor: "whiteAlpha.500"}}>Ring: +45 52 69 82 85</Button>
-                </Stack>
+                    <Text fontSize="lg" textAlign="center">
+                        Dit pålidelige flyttefirma – hver gang til tiden
+                    </Text>
+                    <Text fontSize="lg">
+                        Leder du efter et flyttefirma, der dukker op, passer på dine ting og får dig godt i mål – uden stress?<br/>Hos os er tid, tryghed og kvalitet drivkraften bag hver eneste opgave. Vi hjælper både med privatflytning, erhvervsflytning og akutte flytninger, når det skal gå stærkt.
+                    </Text>
+                    <Text fontSize="lg">Hvorfor vælge os?</Text>
+                    <UnorderedList spacing={3} pl={5} styleType={`'-  '`}>
+                        <ListItem>
+                            <Text><Text as={"span"} fontWeight={"semibold"}>Punktlighed i top:</Text> vi leverer til aftalt tid i stort set alle opgaver (dokumenteret punktlighed på 99%).</Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text><Text as={"span"} fontWeight={"semibold"}>Erfarne flyttefolk:</Text>  dine ejendele håndteres sikkert, professionelt og skånsomt.</Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text><Text as={"span"} fontWeight={"semibold"}>Akut flytning 24/7:</Text>  ring, og vi rykker ud, når behovet opstår.</Text>
+                        </ListItem>
+                        <ListItem>
+                            <Text><Text as={"span"} fontWeight={"semibold"}>Flyttegaranti:</Text>  vi sørger for tryg og forsvarlig transport fra A til B.</Text>
+                        </ListItem>
+                    </UnorderedList>
+                    <Text fontSize="lg">
+                        Få et hurtigt og uforpligtende tilbud – kontakt os i dag, så lægger vi en plan, der passer til din tidsplan og dit budget.
+                    </Text>
+                    <Stack direction={{ base: 'column', md: 'row' }}  mt={5} align="center" justify={"center"} spacing={10}>
+                        <Button as={Link} href='/kontakt' size="lg" py={9} px={20} rounded="full" fontWeight="semibold" _hover={{bgColor: "whiteAlpha.500"}}>
+                            Få et tilbud
+                        </Button>
+                        <Button as={Link} href={`tel:+4552698285`} size="lg" py={9} px={20} variant="outline" textColor="white" rounded="full" _hover={{bgColor: "whiteAlpha.500"}}>
+                            Ring: +45 52 69 82 85
+                        </Button>
+                    </Stack>
                 </Stack>
             </Box>
             </Flex>

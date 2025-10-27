@@ -2,13 +2,32 @@
 import { Box, Container, Heading, Accordion, AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, SimpleGrid } from '@chakra-ui/react'
 
 const faqs = [
-  { q: 'Hvordan sikrer I skrøbelige genstande under flytningen?', a: 'Vi anvender specialiserede emballageteknikker og sikrer ekstra beskyttelse med polstring, så dine skrøbelige genstande når sikkert frem til destinationen.' },
-  { q: 'Er der specifikke genstande, I ikke transporterer?', a: 'Vi undlader transport af farlige materialer og genstande, og vi informerer tydeligt om eventuelle begrænsninger for at sikre sikkerhed og overholdelse af lovgivningen.' },
-  { q: 'Hvordan håndterer I store møbler eller specielle genstande?', a: 'Vores erfarne team bruger avanceret udstyr og teknikker til at håndtere store og usædvanlige genstande forsvarligt, og vi sikrer, at de transporteres sikkert til din nye destination.' },
-  { q: 'Hvad gør I i tilfælde af forsinkelser eller uforudsete hændelser?', a: 'Vi har nødplaner og kommunikerer proaktivt for at håndtere uventede situationer, og vi arbejder altid for at levere en pålidelig service inden for den aftalte tidsramme.' },
-  { q: 'Hvad er jeres politik for forsikring af ejendele under flytningen?', a: 'Vi tilbyder forsikringsmuligheder for at beskytte dine ejendele mod eventuelle skader under flytningen, og vores team vejleder dig gerne om de tilgængelige dækninger.' },
-  { q: 'Hvor lang tid i forvejen skal jeg booke flytningen?', a: 'Vi anbefaler at booke din flytning mindst et par dage i forvejen for at sikre tilgængelighed og give tilstrækkelig tid til planlægning og forberedelse.' },
-]
+  {
+    q: "Hvordan beskytter I skrøbelige ting under flytningen?",
+    a: "Vi pakker skrøbelige genstande i kvalitetsmaterialer som bobleplast og flyttetæpper, mærker kasserne ‘fragile’ og fastspænder dem korrekt i bilen, så alt ankommer sikkert."
+  },
+  {
+    q: "Er der ting, I ikke transporterer?",
+    a: "Vi flytter ikke farligt gods eller ulovlige genstande, fx brandfarlige væsker, gasflasker og bestemte kemikalier. Er du i tvivl, så kontakt os inden booking."
+  },
+  {
+    q: "Hvordan håndterer I tunge eller særlige møbler?",
+    a: "Vores flytteteam bruger egnet løfteudstyr og bæreseler, beskytter gulve og vægge, og vi kan om nødvendigt demontere og samle møbler for en sikker transport."
+  },
+  {
+    q: "Hvad gør I ved forsinkelser eller uforudsete hændelser?",
+    a: "Vi informerer dig proaktivt, justerer planen og sætter alternative løsninger i gang, så flytningen gennemføres så tæt på den aftalte tidsramme som muligt."
+  },
+  {
+    q: "Hvordan er mine ejendele forsikret under flytningen?",
+    a: "Vi er ansvarsforsikret under flytningen og kan rådgive om ekstra dækning, hvis du ønsker udvidet beskyttelse. Kontakt os for detaljer om policer og vilkår."
+  },
+  {
+    q: "Hvor lang tid før skal jeg booke?",
+    a: "Book gerne i god tid—gerne 1–2 uger før i travle perioder. Bemærk, at vi afregner pr. time med minimumsbooking på 2 timer."
+  },
+];
+
 
 export default function FAQ(){
   return (
@@ -20,7 +39,7 @@ export default function FAQ(){
             {faqs.map((f, i) => {
               if(i%2 != 0) return;
               return(
-                <AccordionItem key={i} borderWidth={1} m={1} bg="#f6f7fb" minH={20}>
+                <AccordionItem key={i} borderWidth={1} m={1} bg="#f6f7fb" minH={10}>
                   <Heading bg="#f6f7fb" py={2}>
                     <AccordionButton _hover={{bg: "none"}}>
                       <Box flex="1" textAlign="left">{f.q}</Box>
@@ -36,7 +55,7 @@ export default function FAQ(){
             {faqs.map((f, i) => {
               if(i%2 == 0) return;
               return(
-                <AccordionItem key={i} borderWidth={1} m={1} bg="#f6f7fb" minH={20}>
+                <AccordionItem key={i} borderWidth={1} m={1} bg="#f6f7fb" minH={10}>
                   <Heading bg="#f6f7fb" py={2}>
                     <AccordionButton _hover={{bg: "none"}}>
                       <Box flex="1" textAlign="left">{f.q}</Box>

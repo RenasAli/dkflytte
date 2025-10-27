@@ -17,7 +17,7 @@ const BusinessMoving = () => {
     }, []);
     const imgSrc = "/dkflytte_1.jpeg";
     const title = "Erhvervsflytning";
-    const desc = "Skal du flytte til et nyt hjem? Vi forstår, at en privat flytning kan være både spændende og udfordrende. Hos DK Flytte er vi dedikerede til at gøre hele processen så problemfri som muligt.";
+    const desc = "Skal virksomheden flytte til nye lokaler? Hos DK Flytte sørger vi for en effektiv og sikker erhvervsflytning med minimal nedetid, så jeres kontorflytning bliver problemfri fra planlægning til drift.";
   return (
     <Box>
         <PageHero 
@@ -29,13 +29,13 @@ const BusinessMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Heading color={"secondary"} mb={5}>
-                        Erhvervsflytning
+                        Erhvervsflytning – effektiv kontorflytning med minimal nedetid
                     </Heading>
                     <Text my={5}>
-                        Når det gælder erhvervsflytning, forstår vi hos DK Flytte, hvor vigtigt det er at sikre en gnidningsfri og effektiv proces, så din virksomhed oplever minimal nedetid. Vores erfarne folk har ekspertisen til at håndtere komplekse firmaflytninger, uanset om det drejer sig om kontorer, butikker eller lagerfaciliteter. Vi arbejder sammen med dig for at planlægge og udføre flytningen på en måde, der passer til din tidsplan.
+                        Hos DK Flytte ved vi, at en erhvervsflytning skal være gnidningsfri og effektiv, så driften påvirkes mindst muligt. Vores erfarne team planlægger flytningen i tæt samarbejde med jer og håndterer alt fra kontorer og butikker til lagerfaciliteter – altid tilpasset jeres tidsplan og behov.
                     </Text>
                     <Text mb={5}>
-                        Med vores professionelle flyttemænd og moderne udstyr sørger vi for, at dine kontormøbler, IT-udstyr og dokumenter transporteres sikkert til din nye placering. Vi har blandt andet hjulpet med flytning for erhverv rundt på Sjælland, eksempelvis i København og Nordsjælland, men vi hjælper gerne med netop din firmaflytning, uanset hvor i Danmark du skal flytte til og fra – også hvis det er i udlandet.
+                        Med professionelle flyttemænd og moderne udstyr transporterer vi kontormøbler, IT-udstyr og arkiv sikkert til den nye adresse. Vi hjælper virksomheder på hele Sjælland – særligt i København og Nordsjælland – og udfører firmaflytninger i resten af Danmark samt internationalt.
                     </Text>
                 </Box>
                 <Box >
@@ -58,52 +58,48 @@ const BusinessMoving = () => {
                 </Box>
                 <Box py={1}>
                     <Heading color={"white"} mb={5}>
-                        Skræddersyet firmaflytning til din virksomheds behov
+                        Skræddersyet erhvervsflytning – planlagt efter jeres behov
                     </Heading>
                     <Text my={5} color={"white"}>
-                        Hos DK Flytte forstår vi, at hver virksomhed er unik. Derfor tilbyder vi skræddersyede løsninger til erhvervsflytning, der er tilpasset din virksomheds specifikke behov. Vores flyttefolk arbejder tæt sammen med dig for at udarbejde en detaljeret plan, så overgangen til det nye kontor bliver så glat som muligt.
+                        Hos DK Flytte ved vi, at hver virksomhed er unik. Derfor skræddersyr vi firmaflytning og kontorflytning efter jeres specifikke krav, tidsplan og budget. Vores erfarne flyttefolk planlægger i tæt dialog med jer, så overgangen til nye lokaler bliver glidende og med minimal nedetid.
                     </Text>
                     <Text mb={5} color={"white"}>
-                        Vi tager os af alle trin i processen med flytning for firmaer, herunder pakning, transport og udpakning på det nye sted, så du og dit personale hurtigt kan komme tilbage til jeres daglige arbejde. Vi kan desuden også være behjælpelige med flytterengøring, hvis du ifølge lejekontrakten skal efterlade de gamle lokaler i rengjort tilstand.
+                        Vi håndterer hele processen – professionel pakning, sikker transport og effektiv udpakning på den nye adresse – så jeres team hurtigt er i drift igen. Efter behov kan vi også stå for flytterengøring, så de fraflyttede lokaler afleveres i rengjort stand.
                     </Text>
                 </Box>
             </SimpleGrid>
         </Box>
         <Container maxW="container.lg" py={10} id="10">
-            <Card my={10} boxShadow=" 4px 0px 0px 0px rgba(0, 144, 200, 0.3)">
-            <CardHeader>
-                <Heading
-                    color="secondary"
-                    size="lg"
-                    mt={5}
-                >
-                    Professionel kontorflytning uden stress og nedetid
-                </Heading>
-            </CardHeader>
-            <CardBody>
-                <Text fontSize="lg">
-                    Skal din virksomhed flytte kontor uden afbrydelser i arbejdet? Hos DK Flytte tilbyder vi effektiv og sikker kontorflytning, hvor vi tager hånd om alle detaljer, så du og dine medarbejdere kan fokusere på arbejdet. Vi planlægger flytningen nøje for at sikre en glidende overgang og minimal forstyrrelse af dagligdagen.
-                </Text>
-                <Text fontSize="lg" mt={8}>
-                    Vi håndterer kontormøbler, IT-udstyr og vigtige dokumenter med omhu og sørger for sikker transport til den nye adresse – uanset om flytningen er på Sjælland, i resten af Danmark eller til udlandet.
-                </Text>
-            </CardBody>
+            <Card my={10} boxShadow="4px 0px 0px 0px rgba(0, 144, 200, 0.3)">
+                <CardHeader>
+                    <Heading color="secondary" size="lg" mt={5}>
+                    Kontorflytning uden stress – effektiv og driftssikker
+                    </Heading>
+                </CardHeader>
+                <CardBody>
+                    <Text fontSize="lg">
+                    Skal virksomheden flytte kontor uden at stoppe driften? DK Flytte leverer effektiv og sikker kontorflytning, hvor vi håndterer planlægning og detaljer, så jeres medarbejdere kan fokusere på arbejdet. Vi tilrettelægger forløbet nøje for en glidende overgang og minimal forstyrrelse af hverdagen.
+                    </Text>
+                    <Text fontSize="lg" mt={8}>
+                    Vi tager os omhyggeligt af kontormøbler, IT-udstyr og vigtige dokumenter og sørger for sikker transport til den nye adresse – på Sjælland, i resten af Danmark eller internationalt.
+                    </Text>
+                </CardBody>
             </Card>
         </Container>
         <Container maxW="container.xl" py={10}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
-                <Box>
+               <Box>
                     <Heading color={"secondary"} mb={5}>
-                        Skræddersyet flytteservice til din virksomhed
+                        Skræddersyet erhvervsflytning – effektiv service til jeres virksomhed
                     </Heading>
                     <Text my={10}>
-                        Uanset om du flytter til et større kontor eller blot skifter etager, tilpasser vi vores service præcist efter dine behov. Vores erfarne flyttemænd hjælper med nedpakning, transport og udpakning, så I hurtigt kan komme tilbage til arbejdet uden afbrydelser.
+                        Uanset om I flytter til større lokaler eller blot skifter etage, tilpasser vi flytteservicen præcist efter jeres behov. Vores erfarne flyttemænd håndterer nedpakning, sikker transport og udpakning, så teamet hurtigt kan fortsætte arbejdet uden afbrydelser.
                     </Text>
                     <Text mb={10}>
-                        Hos DK Flytte forstår vi, at tid er penge, og vi arbejder derfor for at minimere nedetid og gøre flytningen så effektiv som muligt. Udover kontorflytning hjælper vi også med andre erhvervsflytninger – fx butikker, klinikker, lagerhaller og andre erhvervslokaler.
+                        Hos DK Flytte ved vi, at nedetid koster. Derfor planlægger vi forløbet stramt og udfører kontorflytning så effektivt som muligt. Vi hjælper også med andre erhvervsflytninger – fx butikker, klinikker, lagerhaller og andre erhvervslokaler.
                     </Text>
                     <Text mb={10}>
-                        DK Flytte – din pålidelige partner til sikker og effektiv kontorflytning.
+                        DK Flytte – din pålidelige partner til sikker, effektiv og skånsom kontorflytning.
                     </Text>
                 </Box>
                 <Box id="11">
@@ -125,25 +121,25 @@ const BusinessMoving = () => {
                     />
                     <Box>
                         <Heading color={"white"} mb={5}>
-                            Express transport – hurtig og pålidelig levering med DK Flytte
+                            Express transport – hurtig, sikker levering i hele Danmark
                         </Heading>
                         <Text fontSize="md" color="white">
-                            Har du brug for hurtig og sikker levering? Hos DK Flytte tilbyder vi express transport, hvor dine ejendele når frem hurtigt og trygt. Vores erfarne flyttemænd og moderne køretøjer sikrer, at alt bliver håndteret forsvarligt under hele transporten.
+                            Har du brug for lynhurtig og pålidelig levering? DK Flytte tilbyder express transport, hvor erfarne chauffører og moderne køretøjer sikrer forsvarlig håndtering og hurtig fremkomst af møbler, kontorudstyr og andre vigtige genstande.
                         </Text>
                         <Text fontSize="md" mt={8} color="white">
-                            Vi planlægger ruten nøje for at minimere leveringstiden og reducere forsinkelser, uanset om det drejer sig om møbler, kontorudstyr eller andre vigtige genstande. Selvom vi har base på Sjælland og hurtigt kan servicere Nordsjælland og København, tilbyder vi vores hurtige og pålidelige transport i hele Danmark.
+                            Vi planlægger ruten nøje for at minimere leveringstid og undgå forsinkelser. Med base på Sjælland kan vi hurtigt servicere København og Nordsjælland – og vi kører naturligvis express i hele Danmark.
                         </Text>
                         <Heading color={"white"} mb={5}>
-                            Akut og fleksibel express transport
+                            Akut express – fleksibel 24/7-transport
                         </Heading>
                         <Text fontSize="md" color="white">
-                            Express transport handler ofte om akutte behov, hvor fleksibilitet og tilgængelighed er altafgørende. Hos DK Flytte er vi tilgængelige 24/7 og kan rykke hurtigt ud, når du har brug for det.
+                            Når behovet er akut, er fleksibilitet afgørende. DK Flytte er tilgængelig 24/7 og rykker hurtigt ud, så dine leverancer når frem til tiden – også uden for normal arbejdstid.
                         </Text>
                         <Text fontSize="md" mt={8} color="white">
-                            Vi tilpasser vores løsninger til dine specifikke behov og koordinerer med dig for at sikre, at ruten og leveringsplanen passer præcist til dine ønsker. Med vores forskellige flyttevogne kan vi håndtere både små og store transportopgaver og levere dine ting til tiden, hver gang.
+                            Vi tilpasser løsningen til dine krav og koordinerer rute og tidsplan med dig. Vores forskellige flyttevogne håndterer både små og store opgaver, så du får express transport, der er hurtig, sikker og præcis – hver gang.
                         </Text>
                         <Text fontSize="md" mt={8} color="white">
-                            DK Flytte – din pålidelige partner til hurtig, sikker og fleksibel express transport.
+                            DK Flytte – din pålidelige partner til akut, sikker og fleksibel express transport.
                         </Text>
                     </Box>
                 </SimpleGrid>
@@ -153,13 +149,13 @@ const BusinessMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Heading color={"secondary"} mb={5}>
-                        Kontakt os for et uforpligtende tilbud på erhvervsflytning
+                        Få et uforpligtende tilbud på erhvervsflytning
                     </Heading>
                     <Text my={10}>
-                        Planlægger du en erhvervsflytning, eksempelvis en butiks- eller kontorflytning? Lad DK Flytte være din partner og sikre en problemfri firmaflytning. Kontakt os i dag for et uforpligtende tilbud.
+                        Planlægger du kontor- eller butikflytning? Lad DK Flytte stå for en gnidningsfri firmaflytning med minimal nedetid. Kontakt os i dag for et skræddersyet, uforpligtende tilbud.
                     </Text>
                     <Text mb={10}>
-                        Vi er dedikerede til at hjælpe virksomheder med at flytte hurtigt og effektivt, og vi står klar til at hjælpe dig med alle aspekter af processen. Uanset hvor du skal flytte hen, og hvor meget der skal flyttes, sørger vi for en sikker og effektiv flytning.
+                        Vi hjælper virksomheder med hurtig og effektiv erhvervsflytning – fra planlægning til sidste kasse. Uanset destination og omfang sørger vores erfarne flyttemænd for en sikker og effektiv proces.
                     </Text>
                     <Stack direction={{ base: 'column', md: 'row' }}  mt={5} align="center" justify={"center"} spacing={10}>
                         <Button as={Link} href='/kontakt' size="lg" py={9} px={20} rounded="full" fontWeight="semibold" _hover={{bgColor: "whiteAlpha.500", color: "secondary", borderColor: "secondary"}}>Få et tilbud</Button>

@@ -8,7 +8,7 @@ const MovingPackages = () => {
   return (
     <Container maxW="container.xl" py={10}>
         <Heading color="primary.500" textAlign="center">Vores flyttepakker og priser</Heading>
-        <Text textAlign="center" my={2} fontSize="sm">Vi kan som minimum bookes til 2 timers flytteservice.</Text>
+        <Text textAlign="center" my={2} fontSize="sm">Vi afregner pr. time og kan som minimum bookes i 2 timer.</Text>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={6} my={10}>
             {movingPackages.map((p, i)=> (
             <Box key={i} borderWidth={1} boxShadow="md">
