@@ -92,6 +92,7 @@ export default function Home(){
               <Image
                 src={"/dkflytte_sqr_1.jpg"}
                 alt='dk-flytte'
+                h={"100%"}
               />
               <Box py={5}>
                 <Heading color="white" mb={10}>
