@@ -12,7 +12,7 @@ export default function Home(){
         <video
           autoPlay loop muted playsInline
           style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover' }}
-          src={"/dkflytte_hero.mp4"}
+          src={"/dkflytte_hero.mov"}
           onError={(e)=> { e.currentTarget.style.display='none' }}
         />
         {/* fallback image */}
