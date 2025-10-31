@@ -14,7 +14,7 @@ const PrivateMoving = () => {
             sessionStorage.removeItem('scrollToId');
         }
     }, [])
-    const imgSrc = "/dkflytte_1.jpeg";
+    const imgSrc = "/dkflytte_3.jpg";
     const title = "Privatflytning";
     const desc = "Skal du flytte i nyt hjem? Vi ved, at en privatflytning både kan være spændende og krævende, og hos DK Flytte gør vi processen enkel, sikker og så problemfri som muligt fra start til slut.";
   return (
@@ -42,7 +42,7 @@ const PrivateMoving = () => {
                 </Box>
                 <Box >
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/dkflytte_2.jpg"
                         alt="dkflytte"
                         rounded="xl"
                     />
@@ -53,7 +53,7 @@ const PrivateMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/image_9.jpg"
                         alt="dkflytte"
                         rounded={"xl"}
                     />
@@ -117,7 +117,7 @@ const PrivateMoving = () => {
                 </Box>
                 <Box>
                     <Image
-                        src="/moving_box_1.jpg"
+                        src="/image_2.jpeg"
                         alt="dkflytte"
                         h={"520px"}
                     />
@@ -129,9 +129,9 @@ const PrivateMoving = () => {
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                     <Box>
                         <Image
-                            src={"/moving_box_1.jpg"}
+                            src={"/dkflytte_1.jpg"}
                             alt='dk-flytte'
-                            h={"600px"}
+                            maxH={"600px"}
                         />
                     </Box>
                     <Box pt={5}>
@@ -184,9 +184,9 @@ const PrivateMoving = () => {
                 </Box>
                 <Box >
                     <Image
-                        src="/moving_box_2.jpg"
+                        src="/image_14.jpg"
                         alt="dkflytte"
-                        h={"640px"}
+                        h={"620px"}
                     />
                 </Box>
             </SimpleGrid>
@@ -195,7 +195,7 @@ const PrivateMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/image_4.jpeg"
                         alt="dkflytte"
                         rounded={"xl"}
                     />

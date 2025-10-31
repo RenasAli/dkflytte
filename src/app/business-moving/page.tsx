@@ -15,7 +15,7 @@ const BusinessMoving = () => {
             sessionStorage.removeItem('scrollToId');
         }
     }, []);
-    const imgSrc = "/dkflytte_1.jpeg";
+    const imgSrc = "/dkflytte_6.jpg";
     const title = "Erhvervsflytning";
     const desc = "Skal virksomheden flytte til nye lokaler? Hos DK Flytte sørger vi for en effektiv og sikker erhvervsflytning med minimal nedetid, så jeres kontorflytning bliver problemfri fra planlægning til drift.";
   return (
@@ -40,7 +40,7 @@ const BusinessMoving = () => {
                 </Box>
                 <Box >
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/image_12.jpg"
                         alt="dkflytte"
                         rounded="xl"
                     />
@@ -51,7 +51,7 @@ const BusinessMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/image_5.jpg"
                         alt="dkflytte"
                         rounded={"xl"}
                     />
@@ -104,7 +104,7 @@ const BusinessMoving = () => {
                 </Box>
                 <Box id="11">
                     <Image
-                        src="/moving_box_1.jpg"
+                        src="/image_10.jpg"
                         alt="dkflytte"
                         h={"450px"}
                     />
@@ -115,9 +115,8 @@ const BusinessMoving = () => {
             <Container maxW="container.xl" py={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                     <Image
-                        src={"/moving_box_1.jpg"}
+                        src={"/image_4.jpeg"}
                         alt='dk-flytte'
-                        h={"640px"}
                     />
                     <Box>
                         <Heading color={"white"} mb={5}>

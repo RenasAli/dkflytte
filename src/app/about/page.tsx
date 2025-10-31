@@ -7,7 +7,7 @@ const About = () => {
     <Box>
         {/* HERO */}
         <Box position="relative" minH={{ base: '60vh', md: '85vh' }} overflow="hidden">
-            <Image src={"/dkflytte_1.jpeg"} alt="flytning" position="absolute" inset={0} w="100%" h="100%" objectFit="cover" />
+            <Image src={"/dkflytte_3.jpg"} alt="flytning" position="absolute" inset={0} w="100%" h="100%" objectFit="cover" />
             <Box position="absolute" inset={0} bgGradient="linear(to-b, rgba(0,0,0,0.55), rgba(0,0,0,0.75))" />
             <Flex maxW="container.2xl" minH={{ base: '60vh', md: '85vh' }}  position="relative" zIndex="5"  align="center" justify="center">
             <Box>
@@ -78,7 +78,7 @@ const About = () => {
                 </Box>
                 <Box >
                     <Image
-                        src="/moving_box_1.jpg"
+                        src="/dkflytte_1.jpg"
                         alt="dkflytte"
                         h={"650px"}
                     />
@@ -89,7 +89,7 @@ const About = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Image
-                        src="/dkflytte_1.jpeg"
+                        src="/image_9.jpg"
                         alt="dkflytte"
                         rounded={"xl"}
                     />
@@ -152,7 +152,7 @@ const About = () => {
                 </Box>
                 <Box>
                     <Image
-                        src="/moving_box_2.jpg"
+                        src="/image_8.jpg"
                         alt="dkflytte"
                         h={"550px"}
                     />

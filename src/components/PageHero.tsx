@@ -23,7 +23,7 @@ const PageHero = ({imageSrc, title, desc}: PageHeroProps) => {
                 />
             </Box>
             <Flex alignItems={"end"}>
-                <Box>
+                <Box maxW={"100%"}>
                     <Heading color={"white"} fontSize={"6xl"}>{title}</Heading>
                     <Text my={5} color="white">{desc ?? ""}</Text>
                     <Divider/>

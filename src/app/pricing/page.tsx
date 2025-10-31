@@ -8,7 +8,7 @@ const Pricing = () => {
     <Box>
         {/* HERO */}
         <Box position="relative" minH={{ base: '60vh', md: '85vh' }} overflow="hidden">
-            <Image src={"/dkflytte_1.jpeg"} alt="flytning" position="absolute" inset={0} w="100%" h="100%" objectFit="cover" />
+            <Image src={"/dkflytte_3.jpg"} alt="flytning" position="absolute" inset={0} w="100%" h="100%" objectFit="cover" />
             <Box position="absolute" inset={0} bgGradient="linear(to-b, rgba(0,0,0,0.55), rgba(0,0,0,0.75))" />
             <Flex maxW="container.2xl" minH={{ base: '60vh', md: '85vh' }}  position="relative" zIndex="5"  align="center" justify="center">
             <Box>
