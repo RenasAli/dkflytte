@@ -14,14 +14,28 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DK Flytte",
+  metadataBase: new URL("https://www.dkflytte.dk"),
+  title: {
+    default: "DK Flytte – Flyttefirma i København & Sjælland",
+    template: "%s | DK Flytte"
+  },
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
-  description: "Dit flytte firma i hele DK",
+  description: "Pålideligt flyttefirma for privat- og erhvervsflytning.",
+  openGraph: {
+    siteName: "DK Flytte",
+    type: "website",
+    locale: "da_DK"
+  },
+  alternates: {
+    canonical: "/"
+  },
+  robots: { index: true, follow: true }
 };
+
 
 export default function RootLayout({
   children,
