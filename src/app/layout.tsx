@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Providers } from "@/providers/Providers";
+import Script from "next/script";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,6 +46,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Cookiebot CMP */}
+        <Script 
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js" data-cbid="588a22c3-78eb-4d69-abe7-568c80ef1efc"
+          data-blockingmode="auto" type="text/javascript"
+        ></Script>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Providers >
           {children}
