@@ -117,7 +117,7 @@ const PrivateMoving = () => {
                 </Box>
                 <Box>
                     <Image
-                        src="/image_2.jpeg"
+                        src="/image_2.JPEG"
                         alt="dkflytte"
                         h={"520px"}
                     />
@@ -195,7 +195,7 @@ const PrivateMoving = () => {
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                 <Box>
                     <Image
-                        src="/image_4.jpeg"
+                        src="/image_4.JPEG"
                         alt="dkflytte"
                         rounded={"xl"}
                     />

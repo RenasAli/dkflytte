@@ -115,7 +115,7 @@ const BusinessMoving = () => {
             <Container maxW="container.xl" py={10}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
                     <Image
-                        src={"/image_4.jpeg"}
+                        src={"/image_4.JPEG"}
                         alt='dk-flytte'
                     />
                     <Box>
