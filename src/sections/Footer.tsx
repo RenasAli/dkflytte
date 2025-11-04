@@ -21,7 +21,7 @@ export default function Footer() {
               <Text>
                 4600 Køge
               </Text>
-              <Text>CVR: 40 40 40 40</Text>
+              <Text>CVR: 45 30 66 90</Text>
             </Box>
           </Box>
           <Box>

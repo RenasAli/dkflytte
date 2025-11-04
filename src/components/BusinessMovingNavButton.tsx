@@ -120,14 +120,24 @@ const BussinessMovingNavButton = ({isActive, onClose}:BussinessMovingNavButtonPr
 
 export default BussinessMovingNavButton
 const bussinessMovinOffers = [
-    {
-        id: 10,
-        title: "kontorflytning",
-        path: '/erhvervsflytning',
-    },
-    {
-        id: 11,
-        title: "Express transport",
-        path: '/erhvervsflytning',
-    },
+  {
+    id: 10,
+    title: "kontorflytning",
+    path: '/erhvervsflytning',
+  },
+  {
+    id: 11,
+    title: "Express transport",
+    path: '/erhvervsflytning',
+  },
+  {
+    id: 12,
+    title: "Nedpakning",
+    path: '/erhvervsflytning',
+  },
+  {
+    id: 13,
+    title: "Udpakning",
+    path: '/erhvervsflytning',
+  },
 ];

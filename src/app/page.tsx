@@ -2,11 +2,13 @@
 import { Box, Container, Heading, Text, Stack, Button, SimpleGrid, Flex, ListItem, UnorderedList, Image, Card, CardHeader, CardBody, Link } from '@chakra-ui/react';
 import FAQ from '../components/FAQ';
 import MovingPackages from '@/components/MovingPackages';
+import BrandJsonLd from '@/components/BrandJsonLd';
 
 
 export default function Home(){
   return (
     <>
+      <BrandJsonLd />
       {/* HERO */}
       <Box position="relative" minH={{ base: '60vh', md: '85vh' }} overflow="hidden">
         <video
