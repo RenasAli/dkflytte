@@ -13,7 +13,7 @@ export default function BrandJsonLd() {
     url: "https://dkflytte.dk",
     logo: "https://dkflytte.dk/logo.png",
     sameAs: [
-      // tilføj når du har dem:
+      // Add when you have it:
       // "https://www.facebook.com/…",
       // "https://www.instagram.com/…",
       // "https://www.linkedin.com/company/…"
