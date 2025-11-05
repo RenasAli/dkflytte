@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 
-const CANONICAL = "/business-moving"; 
+const CANONICAL = "/erhvervsflytning"; 
 
 export const metadata: Metadata = {
   title:
-    "Erhvervsflytning – kontorflytning uden nedetid | DK Flytte",
+    "Erhvervsflytning DK Flytte",
   description:
     "Effektiv og sikker erhvervsflytning med minimal nedetid. DK Flytte håndterer kontorer, butikker og lagerfaciliteter – planlægning, pakning, transport og udpakning i København, Nordsjælland og resten af Sjælland.",
   alternates: { canonical: CANONICAL },

@@ -10,8 +10,16 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   metadataBase: new URL("https://dkflytte.dk"),
   title: {
-    default: "DK Flytte – Privat- og erhvervsflytning i hele Danmark",
-    template: "%s | DK Flytte",
+    default: "DK Flytte",
+    template: "%s",
+  },
+  icons: {
+    icon: [
+      { url: '/favicon-48x48.png', sizes: '48x48', type: 'image/png' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon.ico', sizes: 'any' },
+    ],
   },
   description: "Pålideligt flyttefirma for privat- og erhvervsflytning.",
   openGraph: {
@@ -68,7 +76,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             `}
           </Script>
         )}
-        <link rel="icon" href="/favicon.ico" sizes="any"/>
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <noscript>

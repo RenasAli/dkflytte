@@ -1,10 +1,9 @@
-// server component (ingen "use client")
 import type { Metadata } from "next";
 
-const CANONICAL = "/pricing"; // skift til "/priser" hvis det er din URL
+const CANONICAL = "/priser"; 
 
 export const metadata: Metadata = {
-  title: "Flyttepriser – gennemsigtige timepriser & pakker | DK Flytte",
+  title: "Flyttepriser DK Flytte",
   description:
     "Se flyttepriser og pakker til privat- og erhvervsflytning. Gennemsigtig afregning pr. time (min. 2 timer), ekstra services som tunge løft, flyttekasser, handyman og slutrengøring. København, Nordsjælland & Sjælland.",
   alternates: { canonical: CANONICAL },

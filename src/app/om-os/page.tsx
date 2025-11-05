@@ -78,7 +78,7 @@ const About = () => {
                 </Box>
                 <Box >
                     <Image
-                        src="/dkflytte_1.jpg"
+                        src="/dkflytte_7.jpeg"
                         alt="dkflytte"
                         h={"650px"}
                     />
@@ -152,7 +152,7 @@ const About = () => {
                 </Box>
                 <Box>
                     <Image
-                        src="/image_8.jpg"
+                        src="/dkflytte_8.jpeg"
                         alt="dkflytte"
                         h={"550px"}
                     />

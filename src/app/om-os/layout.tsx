@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-const CANONICAL = "/about";
+const CANONICAL = "/om-os";
 
 export const metadata: Metadata = {
-  title: "Om DK Flytte – professionelt flyttefirma i København & Sjælland",
+  title: "Om DK Flytte",
   description:
     "Lær DK Flytte at kende: værdier, vision og teamet bag. Vi leverer tryg privatflytning, erhvervsflytning, express og opbevaring i København, Nordsjælland og resten af Sjælland.",
   alternates: { canonical: CANONICAL },

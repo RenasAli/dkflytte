@@ -1,10 +1,10 @@
 // server component (ingen "use client")
 import type { Metadata } from "next";
 
-const CANONICAL = "/contact";
+const CANONICAL = "/kontakt";
 
 export const metadata: Metadata = {
-  title: "Kontakt DK Flytte – få et uforpligtende tilbud",
+  title: "Kontakt DK Flytte",
   description:
     "Kontakt DK Flytte for privatflytning, erhvervsflytning, express transport og opbevaring. Hurtig respons 24/7. Vi dækker København, Nordsjælland og resten af Sjælland.",
   alternates: { canonical: CANONICAL },
