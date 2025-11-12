@@ -117,7 +117,7 @@ const PrivateMoving = () => {
                 </Box>
                 <Box>
                     <Image
-                        src="/image_2.JPEG"
+                        src="/dkflytte_4.jpeg"
                         alt="dkflytte"
                         h={"520px"}
                     />

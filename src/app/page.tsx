@@ -93,8 +93,9 @@ export default function Home(){
           <SimpleGrid columns={{ base: 1, md: 2 }} spacing={6}>
               <Image
                 src={"/dkflytte_sqr_1.jpg"}
-                alt='dk-flytte'
-                h={"100%"}
+                alt='dk flytte'
+                // h={"100%"}
+                h={{ base: "300px", md: "100%"}}
               />
               <Box py={5}>
                 <Heading color="white" mb={10}>
